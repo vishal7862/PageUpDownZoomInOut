@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="application">
+<head>
+    <title></title>
+    <style>
+        #demo-stage { position:relative; display:block; top:40px; background:#fff; height:627px; overflow:hidden; }
+    </style>
+</head>
+<body>
+    <div >
+        <div>
+            <button id="btnUp" ng-disabled="pageUpBtnDisable" ng-click="pageUp()">Page Up</button>
+            <button id="btnDown" ng-disabled="pageDownBtnDisable" ng-click="pageDown()">Page Down</button>
+
+        </div>
+        <div id="demo-stage" page-up-down>
+           
+
+            <svg id="page1" style="height:620px;width:500px;position:relative;left:350px;border:solid">
+                <rect width="500" height="620"
+                      style="fill:#ff0000;stroke:black;stroke-width:1;" />
+
+            </svg>
+
+            <br />
+            <br />
+
+            <svg id="page2" style="height:620px;width:500px;position:relative;left:350px;border:solid">
+                <rect width="500" height="620"
+                      style="fill:#ff6a00;stroke:black;stroke-width:1;" />
+            </svg>
+            <br />
+            <br />
+
+            <svg id="page3" style="height:620px;width:500px;position:relative;left:350px;border:solid">
+                <rect width="500" height="620"
+                      style="fill:#4cff00;stroke:black;stroke-width:1;" />
+            </svg>
+
+            <br />
+            <br />
+
+            <svg id="page4" style="height:620px;width:500px;position:relative;left:350px;border:solid">
+                <rect width="500" height="620"
+                      style="fill:#808080;stroke:black;stroke-width:1;" />
+            </svg>
+
+            <br />
+            <br />
+
+            <svg id="page5" style="height:620px;width:500px;position:relative;left:350px;border:solid">
+                <rect width="500" height="620"
+                      style="fill:#00ff90;stroke:black;stroke-width:1;" />
+            </svg>
+        </div>
+    </div>
+    <script src="Scripts/jquery-2.1.1.js"></script>    
+   
+    <!--<script src="tp2.min.js"></script>-->
+    <!--<script src="check.js"></script>-->    
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/angular-route.js"></script>
+    <script src="Scripts/angular-resource.js"></script>
+    <script src="tp.min.js"></script>
+  
+    <script src="PageUpDown.js"></script>
+
+   
+</body>
+</html>

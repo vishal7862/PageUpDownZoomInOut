@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="jgraduate/css/jPicker-1.0.9.css" type="text/css" />
+    <link rel="stylesheet" href="jgraduate/css/jGraduate-0.2.0.css" type="text/css" />
+    <link rel="stylesheet" href="svg-editor.css" type="text/css" />
+    <link rel="stylesheet" href="spinbtn/JQuerySpinBtn.css" type="text/css" />
+    <link href="spinbtn/JQuerySpinBtn.css" rel="stylesheet" />
+    <script src="Scripts/jquery-2.1.1.js"></script>
+    <script src="spinbtn/JQuerySpinBtn.js"></script>
+    <script src="svgicons/jquery.svgicons.js"></script>
+    <script src="svg-editor.js"></script>
+</head>
+<body>
+    <div id="svg_editor">
+        <div id="workarea">
+            <style id="styleoverrides" type="text/css"></style>
+            <div id="svgcanvas"></div>
+        </div>
+        <input type="text" id="myInputElement" />
+    </div>
+        <script>
+
+            var myOptions = {
+                min: 0,						// Set lower limit.
+                max: 100,					// Set upper limit.
+                step: 1,					// Set increment size.
+                //  spinClass: mySpinBtnClass,	// CSS class to style the spinbutton. (Class also specifies url of the up/down button image.)
+                //   upClass: mySpinUpClass,		// CSS class for style when mouse over up button.
+                //   downClass: mySpinDnClass	// CSS class for style when mouse over down button.
+            }
+
+            $(function () {
+               
+                // Initialise INPUT element(s) as SpinButtons: (passing options if desired)
+                $("#myInputElement").SpinButton(myOptions);
+
+            });
+        </script>
+</body>
+</html>

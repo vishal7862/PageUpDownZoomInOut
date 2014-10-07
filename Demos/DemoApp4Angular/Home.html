@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html ng-app="Application">
+<head>
+    
+    <title>SVG demo</title>
+</head>
+<body >
+
+    <button id="zoomIn" ng-click="zoomIn()">ZoomIn</button>
+    <button id="zoomOut" ng-click="zoomOut()" >ZoomOut</button>
+    <button ng-disabled="panBtnVisible==false" id="PanEnabled" ng-click="panEnable()">Pan</button>
+
+    <svg pan-zoom  width="700px"  height="700px"; border:1px solid black; ">
+        <g class="viewport">
+
+            <rect width="500" height="500"
+                  style="fill:yellow;stroke:black;stroke-width:1;" />
+
+            <circle id="cc" cx="25" cy="25" r="5"></circle>
+        </g>
+
+    </svg>
+
+
+
+    <script src="scripts/jquery-2.1.1.js"></script>
+    <script src="Lib/svg-pan-zoom.min.js"></script>
+    <script src="scripts/angular.js"></script>
+    <script src="scripts/angular-resource.js"></script>
+    <script src="scripts/angular-route.js"></script>
+    <script src="scripts/angular-mocks.js"></script>
+    <script src="Js/Directive/panZoom.js"></script>
+   
+  
+</body>
+</html>

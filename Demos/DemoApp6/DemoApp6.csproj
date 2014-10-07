@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8EFAC32F-AD53-4684-957B-3FD62BDA7B95}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DemoApp6</RootNamespace>
+    <AssemblyName>DemoApp6</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="embedapi.js" />
+    <Content Include="images\align-bottom.png" />
+    <Content Include="images\align-bottom.svg" />
+    <Content Include="images\align-center.png" />
+    <Content Include="images\align-center.svg" />
+    <Content Include="images\align-left.png" />
+    <Content Include="images\align-left.svg" />
+    <Content Include="images\align-middle.png" />
+    <Content Include="images\align-middle.svg" />
+    <Content Include="images\align-right.png" />
+    <Content Include="images\align-right.svg" />
+    <Content Include="images\align-top.png" />
+    <Content Include="images\align-top.svg" />
+    <Content Include="images\bold.png" />
+    <Content Include="images\cancel.png" />
+    <Content Include="images\circle.png" />
+    <Content Include="images\clear.png" />
+    <Content Include="images\clone.png" />
+    <Content Include="images\copy.png" />
+    <Content Include="images\cut.png" />
+    <Content Include="images\delete.png" />
+    <Content Include="images\document-properties.png" />
+    <Content Include="images\dropdown.gif" />
+    <Content Include="images\ellipse.png" />
+    <Content Include="images\eye.png" />
+    <Content Include="images\fhpath.png" />
+    <Content Include="images\flyouth.png" />
+    <Content Include="images\flyup.gif" />
+    <Content Include="images\freehand-circle.png" />
+    <Content Include="images\freehand-square.png" />
+    <Content Include="images\go-down.png" />
+    <Content Include="images\go-up.png" />
+    <Content Include="images\image.png" />
+    <Content Include="images\italic.png" />
+    <Content Include="images\line.png" />
+    <Content Include="images\link_controls.png" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\logo.svg" />
+    <Content Include="images\move_bottom.png" />
+    <Content Include="images\move_top.png" />
+    <Content Include="images\none.png" />
+    <Content Include="images\open.png" />
+    <Content Include="images\paste.png" />
+    <Content Include="images\path.png" />
+    <Content Include="images\polygon.png" />
+    <Content Include="images\polygon.svg" />
+    <Content Include="images\README.txt" />
+    <Content Include="images\rect.png" />
+    <Content Include="images\redo.png" />
+    <Content Include="images\reorient.png" />
+    <Content Include="images\rotate.png" />
+    <Content Include="images\save.png" />
+    <Content Include="images\select.png" />
+    <Content Include="images\select_node.png" />
+    <Content Include="images\sep.png" />
+    <Content Include="images\shape_group.png" />
+    <Content Include="images\shape_ungroup.png" />
+    <Content Include="images\source.png" />
+    <Content Include="images\spinbtn_updn_big.png" />
+    <Content Include="images\square.png" />
+    <Content Include="images\svg_edit_icons.svg" />
+    <Content Include="images\text.png" />
+    <Content Include="images\text.svg" />
+    <Content Include="images\to_path.png" />
+    <Content Include="images\undo.png" />
+    <Content Include="images\view-refresh.png" />
+    <Content Include="images\wave.png" />
+    <Content Include="images\wireframe.png" />
+    <Content Include="images\zoom.png" />
+    <Content Include="jgraduate\css\jGraduate-0.2.0.css" />
+    <Content Include="jgraduate\css\jPicker-1.0.9.css" />
+    <Content Include="jgraduate\images\bar-opacity.png" />
+    <Content Include="jgraduate\images\Bars.png" />
+    <Content Include="jgraduate\images\map-opacity.png" />
+    <Content Include="jgraduate\images\mappoint.gif" />
+    <Content Include="jgraduate\images\Maps.png" />
+    <Content Include="jgraduate\images\picker.gif" />
+    <Content Include="jgraduate\images\preview-opacity.png" />
+    <Content Include="jgraduate\images\rangearrows.gif" />
+    <Content Include="jgraduate\images\rangearrows2.gif" />
+    <Content Include="jgraduate\jpicker-1.0.9.min.js" />
+    <Content Include="jgraduate\jquery.jgraduate.js" />
+    <Content Include="jgraduate\jquery.jgraduate.min.js" />
+    <Content Include="jquery-ui\jquery-ui-1.7.2.custom.min.js" />
+    <Content Include="jquery.js" />
+    <Content Include="js-hotkeys\jquery.hotkeys.min.js" />
+    <Content Include="locale\lang.af.js" />
+    <Content Include="locale\lang.ar.js" />
+    <Content Include="locale\lang.az.js" />
+    <Content Include="locale\lang.be.js" />
+    <Content Include="locale\lang.bg.js" />
+    <Content Include="locale\lang.ca.js" />
+    <Content Include="locale\lang.cs.js" />
+    <Content Include="locale\lang.cy.js" />
+    <Content Include="locale\lang.da.js" />
+    <Content Include="locale\lang.de.js" />
+    <Content Include="locale\lang.el.js" />
+    <Content Include="locale\lang.en.js" />
+    <Content Include="locale\lang.es.js" />
+    <Content Include="locale\lang.et.js" />
+    <Content Include="locale\lang.fa.js" />
+    <Content Include="locale\lang.fi.js" />
+    <Content Include="locale\lang.fr.js" />
+    <Content Include="locale\lang.ga.js" />
+    <Content Include="locale\lang.gl.js" />
+    <Content Include="locale\lang.he.js" />
+    <Content Include="locale\lang.hi.js" />
+    <Content Include="locale\lang.hr.js" />
+    <Content Include="locale\lang.hu.js" />
+    <Content Include="locale\lang.hy.js" />
+    <Content Include="locale\lang.id.js" />
+    <Content Include="locale\lang.is.js" />
+    <Content Include="locale\lang.it.js" />
+    <Content Include="locale\lang.ja.js" />
+    <Content Include="locale\lang.ko.js" />
+    <Content Include="locale\lang.lt.js" />
+    <Content Include="locale\lang.lv.js" />
+    <Content Include="locale\lang.mk.js" />
+    <Content Include="locale\lang.ms.js" />
+    <Content Include="locale\lang.mt.js" />
+    <Content Include="locale\lang.nl.js" />
+    <Content Include="locale\lang.no.js" />
+    <Content Include="locale\lang.pl.js" />
+    <Content Include="locale\lang.pt-PT.js" />
+    <Content Include="locale\lang.ro.js" />
+    <Content Include="locale\lang.ru.js" />
+    <Content Include="locale\lang.sk.js" />
+    <Content Include="locale\lang.sl.js" />
+    <Content Include="locale\lang.sq.js" />
+    <Content Include="locale\lang.sr.js" />
+    <Content Include="locale\lang.sv.js" />
+    <Content Include="locale\lang.sw.js" />
+    <Content Include="locale\lang.th.js" />
+    <Content Include="locale\lang.tl.js" />
+    <Content Include="locale\lang.tr.js" />
+    <Content Include="locale\lang.uk.js" />
+    <Content Include="locale\lang.vi.js" />
+    <Content Include="locale\lang.yi.js" />
+    <Content Include="locale\lang.zh-CN.js" />
+    <Content Include="locale\lang.zh-TW.js" />
+    <Content Include="locale\lang.zh.js" />
+    <Content Include="locale\locale.js" />
+    <Content Include="locale\README.txt" />
+    <Content Include="packages.config" />
+    <None Include="Scripts\jquery-2.1.1.intellisense.js" />
+    <Content Include="Scripts\jquery-2.1.1.js" />
+    <Content Include="Scripts\jquery-2.1.1.min.js" />
+    <Content Include="spinbtn\JQuerySpinBtn.css" />
+    <Content Include="spinbtn\JQuerySpinBtn.js" />
+    <Content Include="spinbtn\JQuerySpinBtn.min.js" />
+    <Content Include="spinbtn\spinbtn_updn.png" />
+    <Content Include="svg-editor.css" />
+    <Content Include="svg-editor.html" />
+    <Content Include="svg-editor.js" />
+    <Content Include="svg-editor.min.js" />
+    <Content Include="svgcanvas.js" />
+    <Content Include="svgcanvas.min.js" />
+    <Content Include="svgicons\jquery.svgicons.js" />
+    <Content Include="svgicons\jquery.svgicons.min.js" />
+    <Content Include="Test.html" />
+    <Content Include="Web.config" />
+    <Content Include="Scripts\jquery-2.1.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\svg_edit_icons.svgz" />
+    <Content Include="jgraduate\LICENSE" />
+    <Content Include="jgraduate\README" />
+    <Content Include="js-hotkeys\README.md" />
+    <Content Include="svg-editor.manifest" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>4663</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:4663/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
